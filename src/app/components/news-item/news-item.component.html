@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="news" *ngFor="let item of this.news">
+    <h1 class="name">{{ item.user.name }}</h1>
+    <img [src]="item.user.profile_image" alt="" />
+    <div class="message">
+      <p>{{ item.title }}</p>
+      <p>{{ item.description }}</p>
+    </div>
+    <a [href]="item.url">Read More</a>
+  </div>
+</div>

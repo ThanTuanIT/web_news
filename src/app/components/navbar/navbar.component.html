@@ -1,0 +1,11 @@
+<header class="header">
+    <nav class="nav">
+        <div class="home">
+            <a [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a>
+        </div>
+        <div class="info">
+            <img [src]= "this.authService.photoUrl" alt="">
+            <h1>{{this.authService.userName}}</h1>
+        </div>
+    </nav>
+</header>

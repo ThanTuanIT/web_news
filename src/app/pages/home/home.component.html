@@ -1,0 +1,11 @@
+<app-navbar></app-navbar>
+
+<button
+  *ngIf="this.authService.checkUser()"
+  (click)="this.authService.logOut()"
+>
+  LogOut
+</button>
+<app-news-item></app-news-item>
+
+<!-- <router-outlet></router-outlet> -->
